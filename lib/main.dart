@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:tarkhineh_app/core/theme/theme.dart';
-import 'package:tarkhineh_app/screens/splash/splash_screens.dart';
+import 'package:tarkhineh_app/screens/splash/light_splash_screens.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       // set direction
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       title: "ترخینه یک اپ رستورانی",
       // set app theme
       theme: appTheme,
-      home: SplashScreens(),
+      home: LightSplashScreens(),
     );
   }
 }
