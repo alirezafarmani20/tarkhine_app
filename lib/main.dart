@@ -21,8 +21,10 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: [
-        Locale('fa')//Farsi
+        Locale('fa','IR')//Farsi
       ],
+      // set farsi 
+      locale: Locale('fa', 'IR'),
       debugShowCheckedModeBanner: false,
       title: "ترخینه یک اپ رستورانی",
       // set app theme

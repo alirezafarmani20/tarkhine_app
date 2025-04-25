@@ -13,7 +13,7 @@ class LightSplashScreens extends StatefulWidget {
 class _LightSplashScreensState extends State<LightSplashScreens> {
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 4), () {
+    Future.delayed(Duration(seconds: 2), () {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => SplashScreens()),
@@ -36,8 +36,7 @@ class _LightSplashScreensState extends State<LightSplashScreens> {
             Container(
               // image box
               decoration: BoxDecoration(
-
-                  image: DecorationImage(image: AssetImage("lib/assets/images/Back.png"))
+                  image: DecorationImage(image: AssetImage("lib/assets/images/Back.png"), fit: BoxFit.fill)
               ),
             )
           ],
