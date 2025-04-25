@@ -3,10 +3,11 @@ import 'package:tarkhineh_app/core/theme/color.dart';
 
 // set project theme
 ThemeData appTheme = ThemeData(
+
   appBarTheme: AppBarTheme(
     backgroundColor: ColorApp.primary,
     titleTextStyle: TextStyle(
-      color: ColorApp.white
+      color: ColorApp.white, 
     )
   ),
   textTheme: TextTheme(

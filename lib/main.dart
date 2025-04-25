@@ -10,26 +10,22 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
-  Widget build(BuildContext context) {
-    return GetMaterialApp(
-      // set direction
-      localizationsDelegates: [
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      supportedLocales: [
-        Locale('fa','IR')//Farsi
-      ],
-      // set farsi 
-      locale: Locale('fa', 'IR'),
-      debugShowCheckedModeBanner: false,
-      title: "ترخینه یک اپ رستورانی",
-      // set app theme
-      theme: appTheme,
-      home: LightSplashScreens(),
-    );
-  }
+Widget build(BuildContext context) {
+  return GetMaterialApp(
+    locale: Locale('fa'),
+    localizationsDelegates: [
+      GlobalMaterialLocalizations.delegate,
+      GlobalWidgetsLocalizations.delegate,
+      GlobalCupertinoLocalizations.delegate,
+    ],
+    supportedLocales: [
+      Locale('fa', 'IR'), // Farsi
+    ],
+    debugShowCheckedModeBanner: false,
+    title: "ترخینه یک اپ رستورانی",
+    theme: appTheme,
+    home: LightSplashScreens()
+  );
+}
 }
