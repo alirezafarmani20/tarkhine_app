@@ -12,23 +12,13 @@ class _SplashScreensState extends State<SplashScreens> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            Container(decoration: BoxDecoration(
-              color: ColorApp.primary
-            )),
-            Container(
-              child: Text("hello world", style: TextStyle(
-                color: Colors.white,
-                fontSize: 30,
-                fontWeight: FontWeight.bold
-              ),),
-            ),
-            Container(),
-          ],
-        ),
+      body: Column(
+        children: [
+          Text(
+            "سلام دوستان این متن ازمایشی من است",
+            textDirection: TextDirection.rtl,
+          ),
+        ],
       ),
     );
   }
